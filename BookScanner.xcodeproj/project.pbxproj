@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2359B8C61EF9B78600DD60A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2359B8C51EF9B78600DD60A3 /* AppDelegate.swift */; };
-		2359B8C81EF9B78600DD60A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2359B8C71EF9B78600DD60A3 /* ViewController.swift */; };
+		2359B8C81EF9B78600DD60A3 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2359B8C71EF9B78600DD60A3 /* BarcodeScannerViewController.swift */; };
 		2359B8CB1EF9B78600DD60A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2359B8C91EF9B78600DD60A3 /* Main.storyboard */; };
 		2359B8CD1EF9B78600DD60A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2359B8CC1EF9B78600DD60A3 /* Assets.xcassets */; };
 		2359B8D01EF9B78600DD60A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2359B8CE1EF9B78600DD60A3 /* LaunchScreen.storyboard */; };
+		2359B8D81EF9B99E00DD60A3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2359B8D71EF9B99E00DD60A3 /* CoreDataStack.swift */; };
+		2359B8DB1EF9BC6100DD60A3 /* BookScannerCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2359B8D91EF9BC6100DD60A3 /* BookScannerCoreDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2359B8C21EF9B78600DD60A3 /* BookScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2359B8C51EF9B78600DD60A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2359B8C71EF9B78600DD60A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2359B8C71EF9B78600DD60A3 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		2359B8CA1EF9B78600DD60A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2359B8CC1EF9B78600DD60A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2359B8CF1EF9B78600DD60A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2359B8D11EF9B78600DD60A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2359B8D71EF9B99E00DD60A3 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		2359B8DA1EF9BC6100DD60A3 /* BookScannerCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookScannerCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,23 @@
 			isa = PBXGroup;
 			children = (
 				2359B8C51EF9B78600DD60A3 /* AppDelegate.swift */,
-				2359B8C71EF9B78600DD60A3 /* ViewController.swift */,
+				2359B8D71EF9B99E00DD60A3 /* CoreDataStack.swift */,
+				2359B8DC1EF9BC8100DD60A3 /* Core Data Models  */,
+				2359B8C71EF9B78600DD60A3 /* BarcodeScannerViewController.swift */,
 				2359B8C91EF9B78600DD60A3 /* Main.storyboard */,
 				2359B8CC1EF9B78600DD60A3 /* Assets.xcassets */,
 				2359B8CE1EF9B78600DD60A3 /* LaunchScreen.storyboard */,
 				2359B8D11EF9B78600DD60A3 /* Info.plist */,
 			);
 			path = BookScanner;
+			sourceTree = "<group>";
+		};
+		2359B8DC1EF9BC8100DD60A3 /* Core Data Models  */ = {
+			isa = PBXGroup;
+			children = (
+				2359B8D91EF9BC6100DD60A3 /* BookScannerCoreDataModel.xcdatamodeld */,
+			);
+			name = "Core Data Models ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2359B8C81EF9B78600DD60A3 /* ViewController.swift in Sources */,
+				2359B8D81EF9B99E00DD60A3 /* CoreDataStack.swift in Sources */,
+				2359B8C81EF9B78600DD60A3 /* BarcodeScannerViewController.swift in Sources */,
+				2359B8DB1EF9BC6100DD60A3 /* BookScannerCoreDataModel.xcdatamodeld in Sources */,
 				2359B8C61EF9B78600DD60A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -250,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -304,8 +320,22 @@
 				2359B8D61EF9B78600DD60A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2359B8D91EF9BC6100DD60A3 /* BookScannerCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2359B8DA1EF9BC6100DD60A3 /* BookScannerCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 2359B8DA1EF9BC6100DD60A3 /* BookScannerCoreDataModel.xcdatamodel */;
+			path = BookScannerCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2359B8BA1EF9B78600DD60A3 /* Project object */;
 }
